@@ -1,3 +1,7 @@
+#chatbot on corona
+#which create awairness about corona virus with added gui using tkinter
+#main part is using if,elif,else parts
+
 from tkinter import *   #importing library for tkinter window
 
 import tkinter as tk
@@ -7,7 +11,7 @@ root=Tk()
 
 root.geometry("675x425")  #giving geometry for tkinter window
 
-def send():                   #giving and taking commands from bot
+def send():                   #giving and taking commands from bot using if and elif and else condition
     send="you=>"+e.get()
     txt.insert(END,"\n"+send)
     
@@ -74,6 +78,10 @@ def send():                   #giving and taking commands from bot
     elif(e.get()=="Thank you for awairing"):
 
         txt.insert(END,"\n"+"Bot=>Thats my pleasure")
+
+    elif(e.get()=="Bye!"):
+
+        txt.insert(END,"\n"+"Bot=>Ok Bye! stay safe stay at your home")
         
     else:
         txt.insert(END,"\n"+"Bot=>sorry i dont understand")
